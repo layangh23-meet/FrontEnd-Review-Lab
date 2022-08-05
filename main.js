@@ -1,14 +1,4 @@
-var press = 0;
-
 function changeBackgrounColor() {
-		press = press + 1;
+  var color = prompt("What is your favorite color? ");
+  document.body.style.backgroundColor = color;}
 
-	if (press % 2 != 0) {
-		document.getElementsByTagName("body")[0].style.backgroundColor = "red";
-	}
-
-	else if (press % 2 == 0){
-		document.getElementsByTagName("body")[0].style.backgroundColor = "green";
-	}
-
-};
